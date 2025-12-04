@@ -1,0 +1,59 @@
+.Pricing-section{
+    background: radial-gradient(
+    circle at top,
+    rgba(22, 163, 74, 0.14),
+    rgba(15, 23, 42, 0.95)
+);
+border-radius: 1.5rem;
+border: 1px solid rgba(148, 163, 184, 0.3);
+box-shadow:
+    0 0px 25px rgba(22, 163, 74, 0.15),
+    0 8px 35px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+    max-width: 1120px;
+    margin-top: 1rem !important;
+    margin: 4rem auto 0;
+    display: flex;
+    grid-template-columns: minmax(0,1.2fr) minmax(0,1fr);
+    gap: 3rem;
+    align-items: center;
+    padding: 2rem;
+}
+.Pricing-title{
+    text-align: center;
+    margin: 6rem auto 2rem auto;   /* center + add spacing from top */
+    max-width: 1120px;
+    padding: 0 1.5rem;             /* valid padding syntax */
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+.Pricing-text-box h3{
+    font-size: clamp(2,8rem,4vw,3.6rem);
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 1rem;
+}
+.Pricing-text-box p{
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.85;
+    color: white;
+    max-width: 32rem;
+    margin-bottom: 1rem;
+}
+.pricing-link{
+    color: #33c55e;
+    font-weight: 600;
+    text-decoration:underline ;
+}
+.pricing-link:hover{
+    opacity: 0.8;
+}
+.pricing-image-box{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
