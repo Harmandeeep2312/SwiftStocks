@@ -7,6 +7,8 @@ import OpenAccount from '../OpenAccount';
 import Navbarr from '../Navbarr';
 import Footer from '../Footer';
 import HeroBackground from "./HeroBackground";
+// import Signup from "../Signup/SignUp.jsx";
+import About from "../about/AboutPage";
 
 
 
@@ -21,6 +23,8 @@ function HomePage() {
     <Pricing />
     <Education />
     <OpenAccount />
+    {/* <Signup /> */}
+    <About />
     <Footer />
     </div>
     
