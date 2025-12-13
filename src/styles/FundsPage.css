@@ -1,0 +1,199 @@
+    /* PAGE */
+    .funds-page {
+    padding: 2.2rem 2.8rem;
+    color: #e5e7eb;
+    }
+
+    /* TITLE */
+    .title {
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+    color: #ecfdf5;
+    text-shadow: 0 0 8px rgba(34, 197, 94, 0.35);
+    }
+
+    /* SUMMARY RECTANGLE */
+    .funds-summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 18px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(15, 23, 42, 0.9),
+        rgba(15, 23, 42, 0.7)
+    );
+
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.85);
+    }
+
+    /* STATS */
+    .funds-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 1.4rem;
+    }
+
+    .funds-stats span {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    }
+
+    .funds-stats strong {
+    display: block;
+    font-size: 1.15rem;
+    margin-top: 0.3rem;
+    }
+
+    /* ACTION BUTTONS */
+    .funds-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    }
+
+    .btn-add {
+    background: linear-gradient(135deg, #22c55e, #4ade80);
+    border: none;
+    color: #022c22;
+    font-weight: 700;
+    padding: 0.8rem 1.6rem;
+    border-radius: 999px;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(34, 197, 94, 0.7);
+    }
+
+    .btn-withdraw {
+    background: rgba(2, 6, 23, 0.8);
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    color: #e5e7eb;
+    padding: 0.8rem 1.6rem;
+    border-radius: 999px;
+    cursor: pointer;
+    }
+
+    /* MODAL BACKDROP */
+    .funds-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    }
+
+    /* MODAL */
+    .funds-modal {
+    width: 360px;
+    padding: 2rem;
+    border-radius: 18px;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
+    }
+
+    .funds-modal h4 {
+    margin-bottom: 0.6rem;
+    color: #ecfdf5;
+    }
+
+    .funds-modal p {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    margin-bottom: 1.2rem;
+    }
+
+    .funds-modal input {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: none;
+    background: rgba(2, 6, 23, 0.9);
+    color: #e5e7eb;
+    margin-bottom: 1.4rem;
+    }
+
+    /* MODAL ACTIONS */
+    .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    }
+
+    .btn-primary {
+    background: linear-gradient(135deg, #22c55e, #4ade80);
+    border: none;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+    }
+
+    .btn-secondary {
+    background: transparent;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    color: #e5e7eb;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    }
+
+    /* COLORS */
+    .positive {
+    color: #22c55e;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+    .funds-summary {
+        flex-direction: column;
+    }
+
+    .funds-actions {
+        flex-direction: row;
+    }
+    }
+    .error-text {
+    color: #fb7185;
+    font-size: 0.85rem;
+    margin-bottom: 0.6rem;
+    }
+
+    .btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+    }
+    .funds-history {
+    margin-top: 2.5rem;
+    background: rgba(15, 23, 42, 0.85);
+    border-radius: 16px;
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    padding: 1.5rem;
+    }
+
+    .funds-history h4 {
+    margin-bottom: 1rem;
+    color: #d1fae5;
+    }
+
+    .funds-history table {
+    width: 100%;
+    border-collapse: collapse;
+    }
+
+    .funds-history th,
+    .funds-history td {
+    padding: 0.8rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+    text-align: left;
+    }
+
+    .success {
+    color: #22c55e;
+    }

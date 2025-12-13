@@ -1,0 +1,262 @@
+    .watchlist-container {
+    width: 280px;
+    height: 100vh;
+
+    position: sticky;
+    top: 0;
+
+    background: linear-gradient(
+        180deg,
+        rgba(2, 6, 23, 0.95),
+        rgba(2, 6, 23, 0.88)
+    );
+
+    border-right: 1px solid rgba(34, 197, 94, 0.15);
+
+    box-shadow:
+        inset -1px 0 0 rgba(34, 197, 94, 0.12),
+        0 0 40px rgba(0, 0, 0, 0.9);
+
+    padding: 0.8rem 0.75rem;
+    color: #e5e7eb;
+
+    overflow-y: hidden;
+    border-right: 1px solid rgba(34, 197, 94, 0.18);
+    box-shadow:
+    inset -1px 0 0 rgba(34, 197, 94, 0.15),
+    6px 0 20px rgba(34, 197, 94, 0.08);
+    }
+    .watchlist {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0.8rem 0.75rem;
+        color: #e5e7eb;
+    }
+
+    .watchlist-header {
+    flex-shrink: 0;
+    }
+
+
+    .watchlist-list {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 4px; 
+    }
+
+
+    .search-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
+    }
+
+    .search {
+    flex: 1;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    border-radius: 8px;
+    padding: 0.55rem 0.7rem;
+    color: #e5e7eb;
+    font-size: 0.82rem;
+    outline: none;
+    }
+
+    .search::placeholder {
+    color: #94a3b8;
+    }
+
+    .search:focus {
+    border-color: rgba(34, 197, 94, 0.45);
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.35);
+    }
+
+    .counts {
+    font-size: 0.72rem;
+    color: #9ca3af;
+    }
+
+
+
+    .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+
+
+    .list li {
+    position: relative;
+    padding: 0.55rem 0.4rem;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-right: 4.5rem !important;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+    }
+
+    .list li:hover {
+    background: rgba(34, 197, 94, 0.06);
+    box-shadow: inset 0 0 0 1px rgba(34, 197, 94, 0.15);
+    border-bottom-color: transparent;
+    }
+
+
+
+    .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .item p {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.02em;
+    text-shadow:
+    0 0 6px rgba(255, 255, 255, 0.08),
+    0 0 12px rgba(34, 197, 94, 0.15);
+    }
+
+    .up {
+    color: #4ade80;
+    text-shadow:
+    0 0 6px rgba(34, 197, 94, 0.6),
+    0 0 14px rgba(34, 197, 94, 0.4);
+    }
+
+    .down {
+    color: #fb7185;
+    text-shadow:
+    0 0 6px rgba(244, 63, 94, 0.6),
+    0 0 14px rgba(244, 63, 94, 0.4);
+    }
+    .list li.active {
+    background: rgba(34, 197, 94, 0.08);
+    box-shadow:
+    inset 0 0 0 1px rgba(34, 197, 94, 0.35),
+    0 0 12px rgba(34, 197, 94, 0.2);
+}
+
+
+    .itemInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+    }
+
+    .percent {
+    min-width: 44px;
+    text-align: right;
+    }
+
+    .price {
+    min-width: 52px;
+    text-align: right;
+    color: #e5e7eb;
+    }
+
+    .actions {
+    position: absolute;
+    right: 0.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 0.35rem;
+    }
+
+
+    .actions button {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.45rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    }
+
+
+    .actions .buy {
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    color: #ecfdf5;
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.6);
+    }
+
+    .actions .buy:hover {
+    box-shadow: 0 0 18px rgba(34, 197, 94, 0.9);
+    }
+
+
+    .actions .sell {
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+    color: #fff;
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.6);
+    }
+
+    .actions .sell:hover {
+    box-shadow: 0 0 18px rgba(239, 68, 68, 0.9);
+    }
+
+    .actions .action {
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    color: #38bdf8;
+    }
+
+    .actions .icon {
+    font-size: 1rem;
+    filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.7));
+    }
+
+
+
+    .topbar-container {
+    background: rgba(15, 23, 42, 0.95);
+    border-bottom: 1px solid rgba(34, 197, 94, 0.2);
+    box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.6),
+    inset 0 -1px 0 rgba(34, 197, 94, 0.15);
+    }
+
+    .indices-container {
+    display: flex;
+    gap: 1.2rem;
+    padding: 0.6rem 1rem;
+    }
+
+    .nifty,
+    .sensex {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.75rem;
+    }
+
+    .index {
+    color: #9ca3af;
+    }
+
+    .index-points {
+    color: #e5e7eb;
+    font-weight: 600;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.12);
+    }
+    .watchlist-divider {
+    height: 1px;
+    width: 100%;
+    margin: 0.6rem 0 0.8rem 0;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(34, 197, 94, 0.45),
+        transparent
+    );
+
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.35);
+    }
+
